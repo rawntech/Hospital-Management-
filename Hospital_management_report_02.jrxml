@@ -2,7 +2,7 @@
 <!-- Created with iReport - A designer for JasperReports -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport
-		 name="hospital_report_01"
+		 name="hospital_report_02"
 		 columnCount="1"
 		 printOrder="Vertical"
 		 orientation="Portrait"
@@ -17,7 +17,7 @@
 		 whenNoDataType="NoPages"
 		 isTitleNewPage="false"
 		 isSummaryNewPage="false">
-	<property name="ireport.scriptlethandling" value="2" />
+	<property name="ireport.scriptlethandling" value="0" />
 	<property name="ireport.encoding" value="UTF-8" />
 	<import value="java.util.*" />
 	<import value="net.sf.jasperreports.engine.*" />
@@ -236,10 +236,12 @@
 				</line>
 				<staticText>
 					<reportElement
-						x="2"
-						y="0"
-						width="46"
+						mode="Opaque"
+						x="4"
+						y="1"
+						width="77"
 						height="26"
+						backcolor="#CCCCCC"
 						key="staticText-13"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -249,10 +251,12 @@
 				</staticText>
 				<staticText>
 					<reportElement
+						mode="Opaque"
 						x="81"
-						y="0"
-						width="75"
+						y="1"
+						width="99"
 						height="26"
+						backcolor="#CCCCCC"
 						key="staticText-14"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -262,10 +266,12 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="183"
+						mode="Opaque"
+						x="179"
 						y="1"
-						width="75"
+						width="100"
 						height="26"
+						backcolor="#CCCCCC"
 						key="staticText-15"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -275,10 +281,12 @@
 				</staticText>
 				<staticText>
 					<reportElement
+						mode="Opaque"
 						x="275"
-						y="0"
-						width="127"
+						y="1"
+						width="154"
 						height="26"
+						backcolor="#CCCCCC"
 						key="staticText-16"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -288,10 +296,12 @@
 				</staticText>
 				<staticText>
 					<reportElement
+						mode="Opaque"
 						x="428"
 						y="1"
 						width="104"
 						height="26"
+						backcolor="#CCCCCC"
 						key="staticText-17"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -302,7 +312,113 @@
 			</band>
 		</detail>
 		<columnFooter>
-			<band height="30"  isSplitAllowed="true" >
+			<band height="57"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="11"
+						y="36"
+						width="75"
+						height="20"
+						backcolor="#FFFFFF"
+						key="staticText-18"/>
+					<box></box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Created By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="141"
+						y="37"
+						width="75"
+						height="20"
+						key="staticText-19"/>
+					<box></box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Checked By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="288"
+						y="37"
+						width="75"
+						height="20"
+						key="staticText-20"/>
+					<box></box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Approved By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="432"
+						y="37"
+						width="75"
+						height="20"
+						key="staticText-21"/>
+					<box></box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Consulted By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="11"
+						y="23"
+						width="75"
+						height="14"
+						key="staticText-22"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[-----------------]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="141"
+						y="23"
+						width="78"
+						height="14"
+						key="staticText-23"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[------------------]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="287"
+						y="23"
+						width="78"
+						height="14"
+						key="staticText-24"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[------------------]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="432"
+						y="23"
+						width="78"
+						height="14"
+						key="staticText-25"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[------------------]]></text>
+				</staticText>
 			</band>
 		</columnFooter>
 		<pageFooter>
